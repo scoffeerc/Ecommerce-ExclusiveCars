@@ -1,0 +1,157 @@
+// ...existing code...
+.nav {
+    background: #ffffff;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 1px 2px rgba(16,24,40,0.03);
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.nav .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0.6rem 1rem;
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    list-style: none;
+}
+
+.nav .container li {
+    position: relative; /* para posicionar el badge del carrito */
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav .container a {
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.35rem 0.6rem;
+    border-radius: 6px;
+    transition: background-color 120ms ease, color 120ms ease, transform 120ms ease;
+    display: inline-block;
+}
+
+.nav .container a:hover {
+    background-color: rgba(59,130,246,0.07);
+    color: #0366d6;
+    transform: translateY(-1px);
+}
+
+/* Badge indicador de items en carrito */
+.nav .in-cart {
+    background: #ef4444;
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.12rem 0.45rem;
+    border-radius: 999px;
+    line-height: 1;
+    min-width: 20px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 6px;
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+/* Estilos para mobile */
+@media (max-width: 640px) {
+    .nav .container {
+        gap: 0.6rem;
+        padding: 0.5rem;
+    }
+
+    .nav .container a {
+        padding: 0.3rem 0.45rem;
+        font-size: 0.95rem;
+    }
+
+    .nav .in-cart {
+        top: -8px;
+        right: -6px;
+        font-size: 0.65rem;
+        padding: 0.08rem 0.35rem;
+    }
+}
+```// filepath: c:\Users\sab\Desktop\Reentrega\Ecommerce\src\components\Nav\Nav.css
+// ...existing code...
+.nav {
+    background: #ffffff;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 1px 2px rgba(16,24,40,0.03);
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.nav .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0.6rem 1rem;
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    list-style: none;
+}
+
+.nav .container li {
+    position: relative; /* para posicionar el badge del carrito */
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav .container a {
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.35rem 0.6rem;
+    border-radius: 6px;
+    transition: background-color 120ms ease, color 120ms ease, transform 120ms ease;
+    display: inline-block;
+}
+
+.nav .container a:hover {
+    background-color: rgba(59,130,246,0.07);
+    color: #0366d6;
+    transform: translateY(-1px);
+}
+
+/* Badge indicador de items en carrito */
+.nav .in-cart {
+    background: #ef4444;
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.12rem 0.45rem;
+    border-radius: 999px;
+    line-height: 1;
+    min-width: 20px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 6px;
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+/* Estilos para mobile */
+@media (max-width: 640px) {
+    .nav .container {
+        gap: 0.6rem;
+        padding: 0.5rem;
+    }
+
+    .nav .container a {
+        padding: 0.3rem 0.45rem;
+        font-size: 0.95rem;
+    }
+
+    .nav .in-cart {
+        top: -8px;
+        right: -6px;
+        font-size: 0.65rem;
+        padding: 0.08rem 0.35rem;
+    }
+}

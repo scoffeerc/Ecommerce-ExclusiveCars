@@ -1,0 +1,23 @@
+.section {
+  min-height: 100vh;
+  background-color: hsl(var(--background));
+  padding: 3rem 1.5rem;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 300;
+  color: hsl(var(--foreground));
+  margin-bottom: 2rem;
+  letter-spacing: -0.025em;
+}
+
+.loadingText {
+  color: hsl(var(--muted-foreground));
+  font-size: 0.875rem;
+}

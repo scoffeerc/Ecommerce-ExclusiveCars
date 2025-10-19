@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.emptyMessage {
+  text-align: center;
+  padding: 3rem 0;
+  color: hsl(var(--muted-foreground));
+  font-size: 0.875rem;
+}
