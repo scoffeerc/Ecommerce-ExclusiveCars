@@ -1,0 +1,31 @@
+.cart-container {
+  padding: 20px;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.cart-img {
+  width: 100px;
+  border-radius: 8px;
+}
+
+.btn-danger {
+  background: red;
+  color: #fff;
+}
+
+.btn-warning {
+  background: gold;
+  color: #000;
+}

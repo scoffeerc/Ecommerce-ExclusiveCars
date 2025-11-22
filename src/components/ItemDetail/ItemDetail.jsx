@@ -1,17 +1,20 @@
 // ...existing code...
 import { Link } from "react-router-dom"
 import "./ItemDetail.css"
-import {UseCartContext} from '../../context/CartContext/UseCartContext'
+import { useCartContext } from '../../context/CartContext/UseCartContext'
 
 
 export const ItemDetail = ({ detail }) => {
-    const { addToCart } = UseCartContext(); // ← Agregar esto
+    const { addToCart } = useCartContext(); // ← Agregar esto
 
     
-    const addItem = () => {
-        console.log("Agregar al carrito:", detail);
-        addToCart(detail); // ← Llamar a la función del contexto
+   const addItem = () => {
+    if (!detail?.id) {
+        console.error("⚠️ El producto no tiene ID, no se puede agregar al carrito.");
+        return;
     }
+    addToCart(detail);
+}
 
 
     return (

@@ -1,37 +1,42 @@
-import { useState, useEffect } from "react"
-import { useParams } from "react-router-dom"
-import { ItemDetail } from "../ItemDetail/ItemDetail"
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { ItemDetail } from "../ItemDetail/ItemDetail";
+import { getProducts } from "../../services/products"; // ← usamos el service
 
 export const ItemDetailContainer = () => {
-    const [detail, setDetail] = useState([]);
-    const { id } = useParams();
-    
-    useEffect(() => {
-        fetch("/data/products.json")
-        .then((response) => {
-            if(!response.ok){
-                throw new Error("Problema en buscar productos")
-            } 
-            return response.json();
-        })
-        .then((data) => {
-           const found = data.find(prod => prod.id === id);
-           if(found){
-            setDetail(found)
-           } else {
-            throw new Error("Producto no encontrado")
-           }
-        })
-        .catch((error) => { console.log(error) }); 
-    }, [id])
+  const [detail, setDetail] = useState({});
+  const [loading, setLoading] = useState(true);
+  const { id } = useParams();
 
-    return (
-        <main>
-            {Object.keys(detail).length ? (
-                <ItemDetail detail={detail}/>
-            ) : (
-                <p>Cargando producto...</p>
-            )}
-        </main>
-    )
-}
+  useEffect(() => {
+    setLoading(true);
+
+    getProducts()
+      .then((data) => {
+        // Convertimos ambos IDs a string para evitar mismatch
+        const found = data.find(prod => prod.id.toString() === id);
+
+        if (found) {
+          setDetail(found);
+        } else {
+          throw new Error("Producto no encontrado");
+        }
+
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("❌ Error:", error);
+        setLoading(false);
+      });
+  }, [id]);
+
+  return (
+    <main style={{ padding: "20px", minHeight: "100vh", background: "#f5f5f5" }}>
+      {loading ? (
+        <p>Cargando producto...</p>
+      ) : (
+        <ItemDetail detail={detail} />
+      )}
+    </main>
+  );
+};

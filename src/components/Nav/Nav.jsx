@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom" // ← corregido
-import { UseCartContext } from "../../context/CartContext/UseCartContext"
+import { useCartContext } from "../../context/CartContext/UseCartContext"
 import "./Nav.css"
 
 export const Nav = () => {
-    const { getTotalItems } = UseCartContext();
+    const { getTotalItems } = useCartContext();
 
     return <nav className="nav">
         <ul className="container">

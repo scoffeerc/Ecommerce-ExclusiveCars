@@ -1,10 +1,11 @@
-import { useContext } from "react"
-import { CartContext } from "./CartContext"
+// UseCartContext.js
+import { useContext } from "react";
+import { CartContext } from "./CartContext";
 
-export const UseCartContext = () => {
-  const context = useContext(CartContext)
+export const useCartContext = () => {
+  const context = useContext(CartContext);
   if (!context) {
-    throw new Error("UseCartContext debe usarse dentro de un CartProvider")
+    throw new Error("useCartContext debe usarse dentro de un CartProvider");
   }
-  return context
-}
+  return context;
+};
