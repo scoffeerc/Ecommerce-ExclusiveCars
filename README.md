@@ -1,16 +1,47 @@
-# React + Vite
+🛒 EXCLUSIVE CARS - ECOMMERCE 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend escalable, de performance agresiva y enfocado en conversión.
+Construido con React + Vite, diseñado como base sólida para productos digitales que buscan métricas de venta, velocidad y flexibilidad técnica.
 
-Currently, two official plugins are available:
+🚀 Características Clave
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✔️ Renderizado ultrarrápido con Vite + React
+✔️ Navegación fluida con React Router DOM
+✔️ Flujo de compra completo: Home → Cart → Checkout
+✔️ Arquitectura modular orientada a componentes reutilizables
+✔️ Diseño escalable listo para integración con API y pasarelas de pago
 
-## React Compiler
+🧱 Stack Tecnológico
+  Tecnología	Rol
+  React	UI dinámica y componetizada
+  Vite	Bundling de alta velocidad
+  React Router DOM	
+  Routing empresarial
+  ESLint	Estándares de calidad
+  JavaScript + Hooks	Lógica de negocio
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+  
+📦 Instalación Express
+# 1. Clonar el repositorio
+git clone <url-del-repo>
 
-## Expanding the ESLint configuration
+# 2. Ingresar al proyecto
+cd nombre-del-proyecto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 3. Instalar dependencias
+npm install
+
+# 4. Ejecutar ambiente de desarrollo
+npm run dev
+
+
+🪄 Visión de Producto
+
+Un storefront moderno, performante y mantenible que sirva como base profesional para cualquier ecosistema e-commerce. Nacido para iterar rápido, pivotar estrategias y capturar valor comercial sin comprometer la arquitectura.
+
+👨‍💻 Autor
+Desarrollado con mentalidad de producto premium y foco extremo en mantenibilidad.
+
+👨‍💻 Autor
+
+Desarrollado con mentalidad de producto premium y foco extremo en mantenibilidad.
