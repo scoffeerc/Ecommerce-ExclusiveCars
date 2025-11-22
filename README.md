@@ -1,9 +1,9 @@
-#🛒 EXCLUSIVE CARS - ECOMMERCE 
+# EXCLUSIVE CARS - ECOMMERCE 🛒
 
 Frontend escalable, de performance agresiva y enfocado en conversión.
 Construido con React + Vite, diseñado como base sólida para productos digitales que buscan métricas de venta, velocidad y flexibilidad técnica.
 
-#🚀 Características Clave
+# Características Clave 🚀
 
 ✔️ Renderizado ultrarrápido con Vite + React
 ✔️ Navegación fluida con React Router DOM
@@ -11,7 +11,7 @@ Construido con React + Vite, diseñado como base sólida para productos digitale
 ✔️ Arquitectura modular orientada a componentes reutilizables
 ✔️ Diseño escalable listo para integración con API y pasarelas de pago
 
-#🧱 Stack Tecnológico
+# Stack Tecnológico 🧱
   Tecnología	Rol
   React	UI dinámica y componetizada
   Vite	Bundling de alta velocidad
@@ -21,7 +21,7 @@ Construido con React + Vite, diseñado como base sólida para productos digitale
   JavaScript + Hooks	Lógica de negocio
 
   
-#📦 Instalación Express
+# Instalación Express 📦
 
 ### 1. Clonar el repositorio
 git clone <url-del-repo>
@@ -36,9 +36,11 @@ npm install
 npm run dev
 
 
-#🪄 Visión de Producto
+# Visión de Producto 🪄
 
 Un storefront moderno, performante y mantenible que sirva como base profesional para cualquier ecosistema e-commerce. Nacido para iterar rápido, pivotar estrategias y capturar valor comercial sin comprometer la arquitectura.
 
-#👨‍💻 Autor
+# Autor 👨‍💻
 Desarrollado con mentalidad de producto premium y foco extremo en mantenibilidad.
+
+# CORREO:  sabrinachamorrorocha@gmail.com 
